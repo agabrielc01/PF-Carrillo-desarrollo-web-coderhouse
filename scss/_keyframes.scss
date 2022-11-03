@@ -1,0 +1,35 @@
+
+// KEYFRAMES
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+@keyframes glowText {
+    from {
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px #b4952f, 0 0 10px #b4952f, 0 0 15px #b4952f, 0 0 20px #b4952f, 0 0 25px #b4952f;
+    }
+    to {
+        text-shadow: 0 0 7px #fff, 0 0 5px #D4AF37, 0 0 10px #D4AF37, 0 0 15px #D4AF37, 0 0 20px #D4AF37, 0 0 25px #D4AF37, 0 0 30px #D4AF37;
+    }
+}
+
+@keyframes glowBox {
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px #b4952f, 0 0 10px #b4952f, 0 0 15px #b4952f, 0 0 20px #b4952f, 0 0 25px #b4952f;
+    }
+    to {
+        box-shadow: 0 0 7px #fff, 0 0 5px #D4AF37, 0 0 10px #D4AF37, 0 0 15px #D4AF37, 0 0 20px #D4AF37, 0 0 25px #D4AF37, 0 0 30px #D4AF37;
+    }
+}

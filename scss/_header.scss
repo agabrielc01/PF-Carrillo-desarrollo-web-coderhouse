@@ -63,7 +63,8 @@
 .nav > .nav-links {
     display: inline;
     float: right;
-    font-size: 1.2vw;
+    font-size: 1vw;
+    padding-right: 2vw;
 }
 
 .nav > .nav-links > a {
@@ -100,6 +101,7 @@
         top: 0px;
         width: 10%;
         height: 100%;
+        margin-right: 1%;
     }
     .nav > .nav-btn > label {
         display: inline-block;
@@ -139,11 +141,16 @@
         height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-        height: calc(40vh - 9vh);
-        overflow-y: auto;
+        height: calc(35vh - 9vh);
     }
 
     .nav > .nav-header {
         width: 90%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    .nav > .nav-links {
+        font-size: 1.8vw;
     }
 }

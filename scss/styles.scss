@@ -1351,14 +1351,13 @@ form {
 }
 
 .contacto__body {
-    background-image: url(../assets/images/others/fondo4.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: $background;
 }
 
 .contacto {
     display: flex;
     margin: 100px 30px 30px 30px;
+    min-height: 100vh;
 }
 
 .contact__block {
