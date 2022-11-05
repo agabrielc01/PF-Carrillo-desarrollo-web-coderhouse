@@ -6,11 +6,10 @@
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 30px 10%;
-    background-color: rgba(18,18,18,0.8);
-    border-top: solid $golden;
+    background-color: rgba(212,175,55,0.6);
     border-width: 4px;
     height: auto;
     margin-top: auto;
@@ -24,18 +23,24 @@ footer > .media-icons {
     height: auto;
     width: 30%;
     margin-bottom: 2%;
+    padding: 0vh 3vw;
 }
 
 .fa {
-    height: 20px;
-    width: 20px;
+    font-size: 2vh;
 }
 
 .fa:hover {
     opacity: 0.7;
-    color: #D4AF37;
+    color: #121212;
 }
 
 footer a:hover {
     animation: shake 0.25s;
+}
+
+@media screen and (max-width: 600px){
+    footer a:hover {
+        animation: none;
+    }
 }
