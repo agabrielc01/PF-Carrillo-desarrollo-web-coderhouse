@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Righteous&display=swap');
+@import url('https://fonts.cdnfonts.com/css/qatar2022');                
+@import 'keyframes', 'header', 'footer', 'variables';
+
+
+/* PARTIDOS */
+
+.partidos__body {
+    background-color: #121212;
+}
+
+.partidos__hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 9vh;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../assets/images/others/partidoshero4.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+.partidos__hero h1 {
+    color: #D4AF37;
+    font-size: 10vw;
+    text-shadow: 1px 1px 4px black;
+    letter-spacing: 10px;
+}
+
+.partidos__hero h3 {
+    margin-top: 2vh;
+    color: white;
+    font-size: 4vw;
+    text-shadow: 0px 0px 10px black;
+}
+
+
+.qatar2022 {
+    color: rgba(85,2,28,1);
+    font-family: 'Qatar2022';
+}
+
+.amistoso {
+    color: #75aadb;
+}
+
+
+.partidos__table {
+    height: auto;
+    width: 100%;
+    padding: 60px 80px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.partidos__table2 {
+    height: 1200px;
+    width: 100%;
+    padding: 60px 80px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.partidos__table h2 {
+    font-size: 3vw;
+    color: white;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.partidos__table table {
+    margin-top: 25px;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid #D4AF37; */
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.partidos__table table th {
+    color: #D4AF37;
+}
+
+.partidos__table table img {
+    width: 10%;
+    height: 10%;
+}
+
+
+.victoria {
+    color: green;
+}
+
+
+@media screen and (max-width: 600px){
+
+    .partidos__hero {
+        height: 40vh;
+    }
+
+    .partidos__hero h3 {
+        font-size: 5vw;
+    }
+
+    .partidos__table h2 {
+        font-size: 6vh;
+        color: white;
+        margin: 30px 0px;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1100px){
+
+    .partidos__hero {
+        height: 50vh;
+    }
+}
