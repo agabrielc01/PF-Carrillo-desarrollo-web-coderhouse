@@ -25,22 +25,20 @@
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url(../assets/images/others/partidoshero4.jpg);
     background-size: cover;
     background-position-y: center;
-}
+    h1 {
+        color: #D4AF37;
+        font-size: 10vw;
+        text-shadow: 1px 1px 4px black;
+        letter-spacing: 10px;
+    }
 
-.partidos__hero h1 {
-    color: #D4AF37;
-    font-size: 10vw;
-    text-shadow: 1px 1px 4px black;
-    letter-spacing: 10px;
+    h3 {
+        margin-top: 2vh;
+        color: white;
+        font-size: 4vw;
+        text-shadow: 0px 0px 10px black;
+    }
 }
-
-.partidos__hero h3 {
-    margin-top: 2vh;
-    color: white;
-    font-size: 4vw;
-    text-shadow: 0px 0px 10px black;
-}
-
 
 .qatar2022 {
     color: rgba(85,2,28,1);
@@ -59,8 +57,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    h2 {
+        font-size: 3vw;
+        color: white;
+        margin: 30px 0px;
+        text-align: center;
+    }
+    table {
+        margin-top: 25px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+        color: white;
+        th {
+            color: #D4AF37;
+        }
+        img {
+            width: 10%;
+            height: 10%;
+        }
+    }
 }
-
 
 .partidos__table2 {
     height: 1200px;
@@ -69,32 +87,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.partidos__table h2 {
-    font-size: 3vw;
-    color: white;
-    margin: 30px 0px;
-    text-align: center;
-}
-
-.partidos__table table {
-    margin-top: 25px;
-    height: 100%;
-    width: 100%;
-    /* border: 2px solid #D4AF37; */
-    text-align: center;
-    font-size: 2vw;
-    color: white;
-}
-
-.partidos__table table th {
-    color: #D4AF37;
-}
-
-.partidos__table table img {
-    width: 10%;
-    height: 10%;
 }
 
 
@@ -107,19 +99,27 @@
 
     .partidos__hero {
         height: 40vh;
+        h1 {
+            font-size: 12vw;
+        }
+        h3 {
+            font-size: 5vw;
+        }
     }
 
-    .partidos__hero h3 {
-        font-size: 5vw;
+    .partidos__table {
+        padding: 0px 0px 5vh 0px;
+        h2 {
+            font-size: 4.5vw;
+            color: white;
+            margin: 30px 0px;
+            text-align: center;
+        }
+        table {
+            border-spacing: 0.5vh;
+            font-size: 3vw;        
+        }
     }
-
-    .partidos__table h2 {
-        font-size: 6vh;
-        color: white;
-        margin: 30px 0px;
-        text-align: center;
-    }
-
 }
 
 
