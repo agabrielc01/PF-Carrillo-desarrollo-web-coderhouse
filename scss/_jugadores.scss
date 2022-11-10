@@ -19,11 +19,11 @@
     width: 300px;
     perspective: 1000px;
     margin-bottom: 4vh;
+    :hover {
+        transition: transform 0.8s;
+    }
 }
 
-.flip-card:hover {
-    transition: transform 0.8s;
-}
 
 .inner__bodycard {
     display: flex;
@@ -66,12 +66,11 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(65, 2, 22, 0.5);
-}
-
-.flip-card-front h3 {
-    font-size: 3.5vh;
-    padding-top: 5%;
-    @include text_style4;
+    h3 {
+        font-size: 3.5vh;
+        padding-top: 5%;
+        @include text_style4;
+    }
 }
 
 .flip-card-back {
@@ -84,22 +83,21 @@
     font-size: 1.5vh;    
 }
 
-.card__media > h5 {
-    padding-top: 5%;
-    @include text_style2;
-}
-
-.card__media> .foto{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
 
 .card__media{
     height: 100%;
     width: 100%;
     overflow: hidden;
     background-color: rgba(85,2,28,0.5);
+    h5 {
+        padding-top: 5%;
+        @include text_style2;
+    }
+    .foto{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 .card__info {
@@ -108,22 +106,16 @@
     display: grid;
     grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
     grid-template-rows: auto repeat(5,1fr);
-    // grid-template-areas:
-    //     "posicion posicion posicion posicion_info posicion_info posicion_info"
-    //     "edad edad altura altura peso peso"
-    //     "edad_info edad_info altura_info altura_info peso_info peso_info"
-    //     "dorsal dorsal dorsal dorsal dorsal"
-    //     "dorsal dorsal dorsal dorsal dorsal";
     justify-content: center;
     align-items: center;
-    background-color: rgba(212,175,55,0.5);    
+    background-color: rgba(212,175,55,0.5);
+    h5 {
+        font-size: 15px;
+        font-family: 'Qatar2022';
+        letter-spacing: 2px;
+    }    
 }
 
-.card__info h5 {
-    font-size: 15px;
-    font-family: 'Qatar2022';
-    letter-spacing: 2px;
-}
 
 .posicion {
     grid-column: 1 / 4;
@@ -195,14 +187,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    p {
+        font-size: 15vh;
+        @include text_style4;
+    }
 }
-
-.number > p {
-    font-size: 15vh;
-    @include text_style4;
-}
-
 
 .arq {
     background-image: url(../assets/images/maincards/arq/dibuudes.png);
@@ -253,16 +242,9 @@
     background-position-y: 70vh;
 }
 
-
-.integrantes a:hover {
-    animation-play-state:paused;
-}
-
 .maincards h1 {
     @include text_style2;
 }
-
-
 
 @media screen and (max-width: 600px){
 
@@ -273,13 +255,12 @@
         justify-content: center;
         align-items: center;
         height: auto;
+        h1 {
+            margin: 12vh 2vw 5vh 2vw;
+            font-size: 4vh;
+        }
     }
-    
-    .maincards h1 {
-        margin: 12vh 2vw 5vh 2vw;
-        font-size: 4vh;
-    }
-    
+        
     .maincards__content {
         display: flex;
         flex-direction: column;
@@ -298,17 +279,16 @@
         justify-content: center;
         height: 8vh;
         width: 70%;
+        a {
+            font-size: 3vh;
+            font-family: "Montserrat";
+            text-decoration: none;
+            color: #D4AF37;
+            text-shadow: 1px 1px 4px black;
+            text-align: center;
+        }
     }
     
-    .integrantes a {
-        font-size: 3vh;
-        font-family: "Montserrat";
-        text-decoration: none;
-        color: #D4AF37;
-        text-shadow: 1px 1px 4px black;
-        text-align: center;
-    }
-
     .bodycard h2 {
         font-size: 4vh;
         margin-bottom: 8vh;
@@ -327,11 +307,10 @@
         justify-content: center;
         align-items: center;
         height: auto;
-    }
-
-    .maincards h1 {
-        margin: 5vh 0vw;
-        font-size: 5vh;
+        h1 {
+            margin: 5vh 0vw;
+            font-size: 5vh;
+        }
     }
 
     .maincards__content {
@@ -355,37 +334,27 @@
         min-height: 100vh;
     }
 
-    .flip-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        float: left;
-        height: 400px;
-        width: 300px;
-        perspective: 1000px;
-        margin-bottom: 4vh;
-    }
-
     .arquero {
         background-image: linear-gradient(rgba(12,12,12,0.5),rgba(12,12,12,0.3)),url(../assets/images/others/arqueroicono.png);
         background-size: cover;
     }
 
-    .foto img {
-        border: 2px solid #D4AF37;
-        border-radius: 10%;
+    .foto { 
+        img {
+            border: 2px solid #D4AF37;
+            border-radius: 10%;
+        }
     }
 
     .bodycard {
         display: flex;
         flex-direction: column;
         margin-top: 8vh;
-    }
-
-    .bodycard h2 {
-        font-size: 4vh;
-        margin-bottom: 8vh;
-        @include text_style4;
+        h2 {
+            font-size: 4vh;
+            margin-bottom: 8vh;
+            @include text_style4;
+        }
     }
 
     .inner__bodycard {
@@ -396,20 +365,22 @@
         column-gap: 3vw;
     }
     
-    .integrantes a {    
-        font-family: "Montserrat", Sans-Serif;
-        color: #D4AF37;
-        font-size: 5vh;
-        text-align: center;
-        padding: 10px;
-        text-orientation: upright;
-        writing-mode: vertical-lr;
-        font-weight: bold;
-        transition: top 0.6s linear 0s, left 0.6s linear 0s;
-        text-shadow: 1px 1px 2px black;
-        position: absolute;
-        left: 40%;
-        top: 35%;
+    .integrantes {
+        a {    
+            font-family: "Montserrat", Sans-Serif;
+            color: #D4AF37;
+            font-size: 5vh;
+            text-align: center;
+            padding: 10px;
+            text-orientation: upright;
+            writing-mode: vertical-lr;
+            font-weight: bold;
+            transition: top 0.6s linear 0s, left 0.6s linear 0s;
+            text-shadow: 1px 1px 2px black;
+            position: absolute;
+            left: 40%;
+            top: 35%;
+        }
     }
 
     .integrantes:hover {
@@ -436,11 +407,10 @@
         justify-content: center;
         align-items: center;
         height: auto;
-    }
-
-    .maincards h1 {
-        margin: 5vh 0vw;
-        font-size: 5vh;
+        h1 {
+            margin: 5vh 0vw;
+            font-size: 5vh;
+        }
     }
 
     .maincards__content {
@@ -463,18 +433,6 @@
         min-height: 100vh;
     }
 
-    .flip-card {
-        margin: 25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        float: left;
-        height: 400px;
-        width: 300px;
-        perspective: 1000px;
-    }
-
-
     .inner__bodycard {
         display: flex;
         flex-wrap: wrap;
@@ -483,20 +441,22 @@
         align-items: center;
     }
 
-    .integrantes a {    
-        font-family: "Montserrat", Sans-Serif;
-        color: #D4AF37;
-        font-size: 5vh;
-        text-align: center;
-        padding: 10px;
-        text-orientation: upright;
-        writing-mode: vertical-lr;
-        font-weight: bold;
-        transition: top 0.6s linear 0s, left 0.6s linear 0s;
-        text-shadow: 1px 1px 2px black;
-        position: absolute;
-        left: 40%;
-        top: 35%;
+    .integrantes {
+        a {    
+            font-family: "Montserrat", Sans-Serif;
+            color: #D4AF37;
+            font-size: 5vh;
+            text-align: center;
+            padding: 10px;
+            text-orientation: upright;
+            writing-mode: vertical-lr;
+            font-weight: bold;
+            transition: top 0.6s linear 0s, left 0.6s linear 0s;
+            text-shadow: 1px 1px 2px black;
+            position: absolute;
+            left: 40%;
+            top: 35%;
+        }
     }
 
     .integrantes:hover {

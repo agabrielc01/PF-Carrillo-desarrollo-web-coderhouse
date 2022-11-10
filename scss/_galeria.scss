@@ -27,20 +27,18 @@
     border-left: 4px solid rgb(212,175,55);
     border-right: 4px solid rgb(212,175,55);
     padding: 2vh 0vw;
-}
-
-.banner h1 {
-    letter-spacing: 3.5vh;
+    h1 {
+        letter-spacing: 3.5vh;
+    }
 }
 
 .photo_body {
     padding: 10vh 5vw 4vh 5vw;
     height: 100vh;
-}
-
-.photo_body h1 {
-    color: #D4AF37;
-    font-size: 4vh;
+    h1 {
+        color: #D4AF37;
+        font-size: 4vh;
+    }
 }
 
 
@@ -65,7 +63,6 @@
     grid-area: foto1;
 }
 
-
 .foto2 {
     grid-area: foto2;
 }
@@ -76,10 +73,9 @@
 
 .foto4 {
     grid-area: foto4;
-}
-
-.foto4 img {
-    object-position: -180px;
+    img {
+        object-position: -180px;
+    }
 }
 
 .foto5 {
@@ -145,11 +141,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.video__body h1 {
-    color: #D4AF37;
-    font-size: 4vh;
+    h1 {
+        color: #D4AF37;
+        font-size: 4vh;
+    }
 }
 
 .iframes {
@@ -160,13 +155,12 @@
     gap: 3vh;
     align-items: center;
     height: 50vh;
-}
-
-.iframes iframe {
-    border-radius: 10px;
-    border: 3px solid rgb(212,175,55);
-    height: 100%;
-    width: 80%;
+    iframe {
+        border-radius: 10px;
+        border: 3px solid rgb(212,175,55);
+        height: 100%;
+        width: 80%;
+    }    
 }
 
 
@@ -187,10 +181,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .banner h1 {
-        letter-spacing: 1vh;
+        h1 {
+            letter-spacing: 1vh;
+        }
     }
 
     .img__body{
@@ -254,15 +247,13 @@
         gap: 2vh;
         align-items: center;
         height: 70vh;
+        iframe {
+            border-radius: 10px;
+            border: 3px solid rgb(212,175,55);
+            height: 100%;
+            width: 70%;
+        }
     }
-    
-    .iframes iframe {
-        border-radius: 10px;
-        border: 3px solid rgb(212,175,55);
-        height: 100%;
-        width: 70%;
-    }
-
 }
 
 
@@ -283,10 +274,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .banner h1 {
-        letter-spacing: 1vh;
+        h1 {
+            letter-spacing: 1vh;
+        }
     }
 
     .img__body{
@@ -356,13 +346,11 @@
         gap: 2vh;
         align-items: center;
         height: 70vh;
+        iframe {
+            border-radius: 10px;
+            border: 3px solid rgb(212,175,55);
+            height: 100%;
+            width: 100%;
+        }
     }
-    
-    .iframes iframe {
-        border-radius: 10px;
-        border: 3px solid rgb(212,175,55);
-        height: 100%;
-        width: 100%;
-    }
-
 }

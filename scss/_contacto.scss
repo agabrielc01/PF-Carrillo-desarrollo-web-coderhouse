@@ -23,12 +23,11 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contacto_hero > h1 {
-    @include text_style1;
-    font-size: 3vw;
-    font-weight: 900;
+    h1 {
+        @include text_style1;
+        font-size: 3vw;
+        font-weight: 900;
+    }
 }
 
 .contacto__body {
@@ -40,17 +39,38 @@ form {
     margin: 8vh 6.5vw 8vh 6.5vw;
     height: auto;
     justify-content: space-between;
+    label {
+        color: #fff;
+        padding-bottom: 1vh;
+        font-size: 1vw;
+    }
 }
 
 .contact__block {
     @include text_style1;
     width: 60%;
     height: 75vh; 
-}
-
-.email__form {
-    padding: 10px;
-    width: 100%;
+    h2 {
+        color: #D4AF37;
+        padding: 2vh;
+        font-size: 2.5vw;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact__block-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .contact__block:hover {
@@ -60,21 +80,9 @@ form {
     transition: all 0.5s ease 0s;   
 }
 
-.contact__block h2 {
-    color: #D4AF37;
-    padding: 2vh;
-    font-size: 2.5vw;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact__block > .contact__block-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.email__form {
+    padding: 10px;
+    width: 100%;
 }
 
 .contact__divider {
@@ -101,27 +109,17 @@ form {
     box-shadow: 
     0 0 3px 3px rgba(255, 255, 255, 0.4),
     0 0 5px 5px rgba(212,175,55,0.6);
-}
-
-.contact__text h3 {
-    margin: 3vh 0vw 3vh 0vw;
-    color: #D4AF37;
-}
-
-.contact__text p {
-    padding-bottom: 15px;
-}
-
-.contact__text label {
-    padding-bottom: 30px;
-    color: white;
-}
-
-.contact__block > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    h3 {
+        margin: 3vh 0vw 3vh 0vw;
+        color: #D4AF37;
+    }
+    p {
+        padding-bottom: 15px;
+    }
+    label {
+        padding-bottom: 30px;
+        color: white;
+    }
 }
 
 .user__form {
@@ -137,24 +135,17 @@ form {
     padding: 3vw 3vw 0vw 3vw;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-}
-
-.contacto label {
-    color: #fff;
-    padding-bottom: 1vh;
-    font-size: 1vw;
-}
-
-.user__data input {
-    @include text_style1;
-    display: flex;
-    border: 2.5px solid #D4AF37;
-    border-radius: 4px;
-    background-color: rgba(12, 12, 12, 0.7);
-    text-align: center;
-    height: 4vh;
-    width: 100%;
-    margin: 1.5vh 0vw;
+    input {
+        @include text_style1;
+        display: flex;
+        border: 2.5px solid #D4AF37;
+        border-radius: 4px;
+        background-color: rgba(12, 12, 12, 0.7);
+        text-align: center;
+        height: 4vh;
+        width: 100%;
+        margin: 1.5vh 0vw;
+    }
 }
 
 .consultas {
@@ -165,17 +156,16 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.consultas textarea {    
-    @include text_style1;
-    width: 65%;
-    height: 100%;
-    border: 2.5px solid #D4AF37;
-    border-radius: 4px;
-    resize: none;
-    background-color: rgba(12, 12, 12, 0.7);
-    padding: 1vh;    
+    textarea {    
+        @include text_style1;
+        width: 65%;
+        height: 100%;
+        border: 2.5px solid #D4AF37;
+        border-radius: 4px;
+        resize: none;
+        background-color: rgba(12, 12, 12, 0.7);
+        padding: 1vh;    
+    }
 }
 
 .newsletter-label {
@@ -210,30 +200,44 @@ form {
         
     .contacto_hero {
         height: 25vh;
-    }
-
-    .contacto_hero > h1 {
-        @include text_style1;
-        font-size: 4vw;
-        font-weight: 900;
+        h1 {
+            @include text_style1;
+            font-size: 4vw;
+            font-weight: 900;
+        }
     }
 
     .contacto {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center
+        align-items: center;
+        label {
+            color: #fff;
+            padding-bottom: 1vh;
+            font-size: 2.5vw;
+        }
     }
 
     .contact__block {
         @include text_style1;
         width: 100%;
         height: auto; 
-    }
-
-    .email__form {
-        padding: 10px;
-        width: 100%;
+        h2 {
+            font-size: 3vw;
+        }
+        .contact__block-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .contact__block:hover {
@@ -243,15 +247,9 @@ form {
         transition: all 0.5s ease 0s;   
     }
 
-    .contact__block h2 {
-        font-size: 3vw;
-    }
-
-    .contact__block > .contact__block-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .email__form {
+        padding: 10px;
+        width: 100%;
     }
 
     .contact__divider {
@@ -264,29 +262,19 @@ form {
         width: 100%;
         height: 35vh;
         margin-bottom: 5vh;
-    }
-
-    .contact__text h3 {
-        margin: 3vh 0vw 3vh 0vw;
-        font-size: 2.5vw;
-        color: #D4AF37;
-    }
-
-    .contact__text p {
-        padding-bottom: 1.5vh;
-        font-size: 1.8vw;
-    }
-
-    .contact__text label {
-        padding-bottom: 30px;
-        color: white;
-    }
-
-    .contact__block > form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        h3 {
+            margin: 3vh 0vw 3vh 0vw;
+            font-size: 2.5vw;
+            color: #D4AF37;
+        }
+        p {
+            padding-bottom: 1.5vh;
+            font-size: 1.8vw;
+        }
+        label {
+            padding-bottom: 30px;
+            color: white;
+        }
     }
 
     .user__form {
@@ -302,24 +290,17 @@ form {
         padding: 3vw 3vw 0vw 3vw;
         text-align: center;
         font-family: "Montserrat", sans-serif;
-    }
-
-    .contacto label {
-        color: #fff;
-        padding-bottom: 1vh;
-        font-size: 2.5vw;
-    }
-
-    .user__data input {
-        @include text_style1;
-        display: flex;
-        border: 2.5px solid #D4AF37;
-        border-radius: 4px;
-        background-color: rgba(12, 12, 12, 0.7);
-        text-align: center;
-        height: 4vh;
-        width: 100%;
-        margin: 1.5vh 0vw;
+        input {
+            @include text_style1;
+            display: flex;
+            border: 2.5px solid #D4AF37;
+            border-radius: 4px;
+            background-color: rgba(12, 12, 12, 0.7);
+            text-align: center;
+            height: 4vh;
+            width: 100%;
+            margin: 1.5vh 0vw;
+        }
     }
 
     .consultas {
@@ -330,17 +311,16 @@ form {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .consultas textarea {    
-        @include text_style1;
-        width: 65%;
-        height: 100%;
-        border: 2.5px solid #D4AF37;
-        border-radius: 4px;
-        resize: none;
-        background-color: rgba(12, 12, 12, 0.7);
-        padding: 1vh;    
+        textarea {    
+            @include text_style1;
+            width: 65%;
+            height: 100%;
+            border: 2.5px solid #D4AF37;
+            border-radius: 4px;
+            resize: none;
+            background-color: rgba(12, 12, 12, 0.7);
+            padding: 1vh;    
+        }
     }
 
     .newsletter-label {

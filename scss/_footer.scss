@@ -13,17 +13,16 @@ footer {
     border-width: 4px;
     height: auto;
     margin-top: auto;
-}
-
-footer > .media-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    width: 30%;
-    margin-bottom: 2%;
-    padding: 0vh 3vw;
+    .media-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        width: 30%;
+        margin-bottom: 2%;
+        padding: 0vh 3vw;
+    }
 }
 
 .fa {
