@@ -653,6 +653,10 @@ footer a:hover {
   animation: shake 0.25s; }
 
 @media screen and (max-width: 600px) {
+  footer .media-icons {
+    width: 50%; }
+  footer p {
+    font-size: 3.5vw; }
   footer a:hover {
     animation: none; } }
 
@@ -1031,6 +1035,10 @@ footer a:hover {
   animation: shake 0.25s; }
 
 @media screen and (max-width: 600px) {
+  footer .media-icons {
+    width: 50%; }
+  footer p {
+    font-size: 3.5vw; }
   footer a:hover {
     animation: none; } }
 
@@ -1322,9 +1330,9 @@ footer a:hover {
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 4vw; }
-  .about__us h1 {
-    font-size: 8vh;
+  padding: 10vh 4vw; }
+  .about__us h3 {
+    font-size: 3vw;
     color: #fff;
     padding-bottom: 3vh; }
   .about__us p {
@@ -1430,9 +1438,9 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5vh; }
-    .about__us h1 {
-      font-size: 4vh;
+    padding: 10vh 5vh; }
+    .about__us h3 {
+      font-size: 3vw;
       padding-bottom: 2vh;
       margin: 0; }
     .about__us p {
@@ -1548,7 +1556,7 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5vh; }
+    padding: 15vh 5vh; }
     .about__us h1 {
       font-size: 4vh;
       padding-bottom: 2vh;
@@ -1932,6 +1940,10 @@ footer a:hover {
   animation: shake 0.25s; }
 
 @media screen and (max-width: 600px) {
+  footer .media-icons {
+    width: 50%; }
+  footer p {
+    font-size: 3.5vw; }
   footer a:hover {
     animation: none; } }
 
@@ -2920,6 +2932,10 @@ footer a:hover {
   animation: shake 0.25s; }
 
 @media screen and (max-width: 600px) {
+  footer .media-icons {
+    width: 50%; }
+  footer p {
+    font-size: 3.5vw; }
   footer a:hover {
     animation: none; } }
 
@@ -3093,9 +3109,11 @@ footer a:hover {
   background-size: cover;
   background-position-y: center; }
   .partidos__hero h1 {
+    font-family: "Montserrat";
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
     color: #D4AF37;
     font-size: 10vw;
-    text-shadow: 1px 1px 4px black;
     letter-spacing: 10px; }
   .partidos__hero h3 {
     margin-top: 2vh;
@@ -3116,24 +3134,40 @@ footer a:hover {
   padding: 60px 80px 40px 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
   .partidos__table h2 {
-    font-size: 3vw;
+    font-family: "Montserrat";
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+    color: #D4AF37;
+    font-size: 2.5vw;
     color: white;
     margin: 30px 0px;
-    text-align: center; }
+    text-align: center;
+    background-color: #D4AF37;
+    border-radius: 10px;
+    width: auto;
+    padding: 1vh 2vw; }
   .partidos__table table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 25px;
     height: 100%;
     width: 100%;
     text-align: center;
     font-size: 2vw;
-    color: white; }
+    color: white;
+    border-spacing: 2.5rem 2rem; }
     .partidos__table table th {
       color: #D4AF37; }
     .partidos__table table img {
       width: 10%;
       height: 10%; }
+    .partidos__table table td {
+      width: auto;
+      height: auto; }
 
 .partidos__table2 {
   height: 1200px;
@@ -3543,6 +3577,10 @@ footer a:hover {
   animation: shake 0.25s; }
 
 @media screen and (max-width: 600px) {
+  footer .media-icons {
+    width: 50%; }
+  footer p {
+    font-size: 3.5vw; }
   footer a:hover {
     animation: none; } }
 
@@ -4322,6 +4360,10 @@ footer a:hover {
   animation: shake 0.25s; }
 
 @media screen and (max-width: 600px) {
+  footer .media-icons {
+    width: 50%; }
+  footer p {
+    font-size: 3.5vw; }
   footer a:hover {
     animation: none; } }
 

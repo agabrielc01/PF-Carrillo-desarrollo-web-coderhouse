@@ -26,9 +26,8 @@
     background-size: cover;
     background-position-y: center;
     h1 {
-        color: #D4AF37;
+        @include text_style1;
         font-size: 10vw;
-        text-shadow: 1px 1px 4px black;
         letter-spacing: 10px;
     }
 
@@ -57,25 +56,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     h2 {
-        font-size: 3vw;
+        @include text_style1;
+        font-size: 2.5vw;
         color: white;
         margin: 30px 0px;
         text-align: center;
+        background-color: #D4AF37;
+        border-radius: 10px;
+        width: auto;
+        padding: 1vh 2vw;
     }
     table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 25px;
         height: 100%;
         width: 100%;
         text-align: center;
         font-size: 2vw;
         color: white;
+        border-spacing: 2.5rem 2rem;
         th {
             color: #D4AF37;
         }
         img {
             width: 10%;
             height: 10%;
+        }
+        td{
+            width: auto;
+            height: auto;
         }
     }
 }

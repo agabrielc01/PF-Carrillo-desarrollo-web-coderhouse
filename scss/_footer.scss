@@ -39,6 +39,14 @@ footer a:hover {
 }
 
 @media screen and (max-width: 600px){
+    footer{
+        .media-icons {
+            width: 50%;
+        }
+        p{
+            font-size: 3.5vw;
+        }
+    }
     footer a:hover {
         animation: none;
     }
